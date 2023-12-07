@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      TEST_PROJECT: ${{ github.head_ref }}
+      TEST_PROJECT: ${{ github.event.repository.name }}
 
     steps:
     - uses: actions/checkout@v3
